@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Meridian Driving">
+  <rect width="32" height="32" rx="7" fill="#166892"/>
+  <path fill="#FFFFFF" d="M16 6.5 28 26H4z"/>
+  <path fill="#166892" d="M16 13.4 23.4 26H8.6z"/>
+  <rect x="14.6" y="16.6" width="2.8" height="9.4" rx="1.4" fill="#52ADD6"/>
+  <circle cx="16" cy="11.6" r="2.15" fill="#CD2220"/>
+</svg>

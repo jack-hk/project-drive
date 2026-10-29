@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14202b;
+  --color-paper: #ffffff;
+  --color-card: #ffffff;
+  --color-mist: #f4f8fb;
+  --color-blue: #52add6;
+  --color-blue-deep: #166892;
+  --color-blue-ink: #0f5474;
+  --color-blue-line: #3d86ab;
+  --color-red: #cd2220;
+  --color-stone: #4a5966;
+  --color-line: #e2eaf1;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.site-nav {
+  transition: transform 200ms ease-out;
+}
+
+.site-nav[data-hidden="true"] {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.site-nav[data-hidden="true"]:focus-within {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.press {
+  transition:
+    scale 150ms ease-out,
+    background-color 200ms ease-out,
+    color 200ms ease-out;
+}
+
+.press:active {
+  scale: 0.96;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav,
+  .press {
+    transition: none;
+  }
+
+  .press:active {
+    scale: 1;
+  }
+}
