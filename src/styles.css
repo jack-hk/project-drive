@@ -60,6 +60,20 @@
   pointer-events: auto;
 }
 
+/* Desktop uses the image's natural 16:9 scale, viewed through a centred 70%
+   height window: 15% is cropped from both the top and bottom. */
+@media (min-width: 48rem) {
+  .hero-image-frame {
+    aspect-ratio: 160 / 63;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    height: auto;
+    object-position: center;
+  }
+}
+
 .press {
   transition:
     scale 150ms ease-out,
