@@ -59,7 +59,7 @@ export type SiteContent = {
 };
 
 export const site: SiteContent = {
-  brand: "Meridian",
+  brand: "JHK Driving",
   nav: [
     { id: "about", label: "About", href: "#about" },
     { id: "contact", label: "Contact", href: "#contact" },

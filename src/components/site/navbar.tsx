@@ -23,19 +23,15 @@ export function Navbar({ brand, items }: NavbarProps) {
 
   return (
     <header
-      className="site-nav fixed inset-x-0 top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-sm"
+      className="site-nav fixed inset-x-0 top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-sm md:sticky"
       data-hidden={hidden ? "true" : "false"}
     >
       <nav
         aria-label="Page"
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"
+        className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-5 md:h-20 md:px-8"
       >
-        <a href="#top" onClick={onBrand} className="flex min-h-11 items-center gap-2">
-          <span className="flex h-5 w-5 overflow-hidden rounded-sm" aria-hidden="true">
-            <span className="h-full w-1/2 bg-blue" />
-            <span className="h-full w-1/2 bg-red" />
-          </span>
-          <span className="text-lg font-semibold tracking-tight">{brand}</span>
+        <a href="#top" onClick={onBrand} aria-label={`${brand} home`} className="flex min-h-11 items-center">
+          <img src="/images/logo.png" alt="" className="h-10 w-auto object-contain md:h-14" />
         </a>
         <ul className="flex items-center gap-1">
           {items.map((item) => (

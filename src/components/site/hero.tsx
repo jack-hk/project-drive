@@ -13,14 +13,16 @@ export function Hero({ hero }: HeroProps) {
   };
 
   return (
-    <section aria-labelledby="hero-title" className="pt-16">
-      <img
-        src={hero.image.src}
-        alt={hero.image.alt}
-        width={hero.image.width}
-        height={hero.image.height}
-        className="block h-64 w-full object-cover sm:h-80 md:h-[28rem]"
-      />
+    <section aria-labelledby="hero-title" className="pt-16 md:pt-0">
+      <div className="hero-image-frame">
+        <img
+          src={hero.image.src}
+          alt={hero.image.alt}
+          width={hero.image.width}
+          height={hero.image.height}
+          className="hero-image block h-64 w-full object-cover sm:h-80 md:h-[28rem]"
+        />
+      </div>
       <div className="mx-auto max-w-6xl px-5">
         <div className="relative z-10 -mt-12 max-w-xl bg-paper px-6 py-8 shadow-sm md:-mt-20 md:px-8 md:py-10">
           <p className="text-sm font-semibold tracking-widest text-blue uppercase">{hero.kicker}</p>
