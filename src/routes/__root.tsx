@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Meridian Driving";
+const APP_NAME = "JHK Driving";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -13,7 +13,8 @@ export const Route = createRootRoute({
       { title: APP_NAME },
       {
         name: "description",
-        content: "Meridian Driving — patient driving lessons, open to every pace.",
+        content:
+          "Patient, inclusive driving lessons with Jason, an approved driving instructor with over 10 years of experience, helping learners build confidence and pass.",
       },
       { name: "theme-color", content: "#ffffff" },
     ],

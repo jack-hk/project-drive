@@ -17,6 +17,19 @@ export function LandingPage() {
         <Testimonials testimonials={site.testimonials} />
         <ContactSection contact={site.contact} />
       </main>
+      <footer className="border-t border-stone/20 bg-paper px-5 py-3 text-center text-xs text-stone">
+        <p>
+          Site maintained by{" "}
+          <a
+            href="https://github.com/jack-hk"
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-blue-deep underline-offset-2 hover:underline"
+          >
+            <strong>Jack</strong>
+          </a>
+        </p>
+      </footer>
     </>
   );
 }

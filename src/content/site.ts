@@ -84,10 +84,10 @@ export const site: SiteContent = {
   about: {
     id: "about",
     title: "Hi, I'm Jason",
-    subtitle: "About US",
+    subtitle: "About me",
     paragraphs: [
-      "I’m an approved driving instructor with 10+ years of experience, working with a school until 2018 when I became independant.",
-      "I’m very patient and I work with my pupils providing demonstrations and diagrams to work as a team, to make them a safe driver and to get them passed.",
+      "I’m an approved driving instructor with over 10 years of experience. I worked with a driving school until 2018, when I became independent.",
+      "I’m patient and work with each pupil using demonstrations and diagrams to build their skills together, helping them become safe, confident drivers and pass their test.",
     ],
   },
   testimonials: [
